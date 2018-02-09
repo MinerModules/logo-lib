@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -73,6 +73,20 @@
 <circle x="1" y="6" radius="0.559015625" width="0" layer="21"/>
 <text x="3.5" y="-0.75" size="0.8128" layer="25" align="center">MONOMANIC</text>
 </package>
+<package name="LOGO-SMALL">
+<wire x1="0" y1="0" x2="0" y2="3" width="0.127" layer="21"/>
+<wire x1="0" y1="3" x2="3" y2="3" width="0.127" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="0" width="0.127" layer="21"/>
+<wire x1="3" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="1" y="3"/>
+<vertex x="1" y="2.5"/>
+<vertex x="2" y="2.5"/>
+<vertex x="2" y="3.5"/>
+<vertex x="1" y="3.5"/>
+</polygon>
+<circle x="0.5" y="2.5" radius="0.2" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LOGO-MONOMANIC">
@@ -100,6 +114,11 @@ Silk and copper in large and small included</description>
 </gates>
 <devices>
 <device name="LARGE-SILK" package="LOGO-LARGE">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMALL-SILK" package="LOGO-SMALL">
 <technologies>
 <technology name=""/>
 </technologies>

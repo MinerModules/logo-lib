@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -70,59 +70,13 @@
 <vertex x="4.5" y="8"/>
 <vertex x="2.5" y="8"/>
 </polygon>
+<circle x="1" y="6" radius="0.559015625" width="0" layer="21"/>
 <text x="3.5" y="-0.75" size="0.8128" layer="25" align="center">MONOMANIC</text>
-</package>
-<package name="LOGO-SMALL">
-<wire x1="0" y1="0" x2="0" y2="3" width="0.127" layer="21"/>
-<wire x1="0" y1="3" x2="3" y2="3" width="0.127" layer="21"/>
-<wire x1="3" y1="3" x2="3" y2="0" width="0.127" layer="21"/>
-<wire x1="3" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<polygon width="0.127" layer="21">
-<vertex x="1" y="3"/>
-<vertex x="1" y="2.5"/>
-<vertex x="2" y="2.5"/>
-<vertex x="2" y="3.5"/>
-<vertex x="1" y="3.5"/>
-</polygon>
 </package>
 </packages>
 <symbols>
-<symbol name="LOGO-MONOMANIC">
-<wire x1="0" y1="0" x2="0" y2="7.62" width="0.254" layer="94"/>
-<wire x1="0" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="0" width="0.254" layer="94"/>
-<wire x1="7.62" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<polygon width="0.254" layer="94">
-<vertex x="3.048" y="7.62"/>
-<vertex x="3.048" y="8.128"/>
-<vertex x="4.572" y="8.128"/>
-<vertex x="4.572" y="6.858"/>
-<vertex x="3.048" y="6.858"/>
-</polygon>
-<text x="2.54" y="2.54" size="0.8128" layer="95">LOGO</text>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="MONOMANIC-LOGO" prefix="LOGO">
-<description>Monomanic Logo versions.
-
-Silk and copper in large and small included</description>
-<gates>
-<gate name="G$1" symbol="LOGO-MONOMANIC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="LARGE-SILK" package="LOGO-LARGE">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMALL-SILK" package="LOGO-SMALL">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 </drawing>
